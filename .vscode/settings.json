@@ -1,0 +1,22 @@
+{
+    "python.defaultInterpreterPath": "/home/minjun/miniconda3/envs/motif-gen/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "/home/minjun/miniconda3/envs/motif-gen/bin/pylint",
+    // use black formatter
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "/home/minjun/miniconda3/envs/motif-gen/bin/black",
+    "[python]": {
+        // auto black on save
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            // auto isort on save
+            "source.organizeImports": true,
+            "python.sortImports": true
+        }
+    },
+    "python.analysis.indexing": true,
+    "python.analysis.packageIndexDepths": [
+        { "name": "rdkit", "depth": 4, "includeAllSymbols": true },
+        { "name": "torch", "depth": 4, "includeAllSymbols": true },
+    ]
+}
