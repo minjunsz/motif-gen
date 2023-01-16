@@ -16,7 +16,20 @@
     },
     "python.analysis.indexing": true,
     "python.analysis.packageIndexDepths": [
-        { "name": "rdkit", "depth": 4, "includeAllSymbols": true },
-        { "name": "torch", "depth": 4, "includeAllSymbols": true },
-    ]
+        {
+            "name": "rdkit",
+            "depth": 4,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "torch",
+            "depth": 4,
+            "includeAllSymbols": true
+        },
+    ],
+    "autoDocstring.docstringFormat": "google",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "119"
+    ],
 }
