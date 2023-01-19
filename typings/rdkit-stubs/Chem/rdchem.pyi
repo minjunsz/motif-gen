@@ -75,3 +75,30 @@ class PeriodicTable:
     def GetRvdw(self, symbol: str) -> float: ...
     @overload
     def GetRvdw(self, atomicNum: int) -> float: ...
+
+class BondType(int):
+    AROMATIC: BondType
+    DATIVE: BondType
+    DATIVEL: BondType
+    DATIVEONE: BondType
+    DATIVER: BondType
+    DOUBLE: BondType
+    FIVEANDAHALF: BondType
+    FOURANDAHALF: BondType
+    HEXTUPLE: BondType
+    HYDROGEN: BondType
+    IONIC: BondType
+    ONEANDAHALF: BondType
+    OTHER: BondType
+    QUADRUPLE: BondType
+    QUINTUPLE: BondType
+    SINGLE: BondType
+    THREEANDAHALF: BondType
+    THREECENTER: BondType
+    TRIPLE: BondType
+    TWOANDAHALF: BondType
+    UNSPECIFIED: BondType
+    ZERO: BondType
+
+    names: dict[str, BondType]
+    values: dict[int, BondType]
