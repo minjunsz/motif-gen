@@ -32,4 +32,5 @@
         "--line-length",
         "119"
     ],
+    "python.analysis.stubPath": "/home/minjun/python/custom-typeshed",
 }
