@@ -39,8 +39,8 @@ class LigandParser:
     positions: torch.Tensor  # Size([N,3])
     elements: torch.Tensor  # Size([N])
     center_of_mass: torch.Tensor  # Size([3])
-    bond_index: torch.Tensor  # Size([2, 2E])
-    bond_type: torch.Tensor  # Size(E)
+    bond_index: torch.Tensor  # Size([2, 2E]); must be 2E to make it undirected.
+    bond_type: torch.Tensor  # Size(2E); must be 2E to make it undirected.
 
     def __init__(self) -> None:
         fdef_name = Path(RDConfig.RDDataDir) / "BaseFeatures.fdef"
